@@ -49,8 +49,26 @@ let name = "John"
 
 //Condition statment
 //Odd/Even check
-if a%2 == 0 {
+/*if a%2 == 0 {
 	print("\(a)) is even"
 } else {
 	print("\(a)) is odd"
+}*/
+
+//Check todays date
+let weekday = Calendar.current.component(.weekday, from: Date())
+if weekday == 1 {
+	print("Today is Sunday")
+}else if weekday == 2 {
+	print("Today is Monday")
+}else if weekday == 3 {
+	print("Today is Tuesday")
+}else if weekday == 4 {
+	print("Today is Wednesday")
+}else if weekday == 5 {
+	print("Today is Thursday")
+}else if weekday == 6 {
+	print("Today is Friday")
+}else {
+	print("Today is Saturday")
 }
